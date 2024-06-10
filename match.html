@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Page - BettingSite</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .container {
+            max-width: 960px;
+            width: 100%;
+        }
+        .navbar {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        /* Add box-shadow to the header of the match page */
+        .match-header {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        /* Center align the form */
+        .match-form {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">BettingSite</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="leaderboard.html">Leaderboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+        <div class="row mt-5">
+            <div class="col-md-6 mx-auto">
+                <!-- Apply the match-form class to center align the form -->
+                <div class="card match-form">
+                    <div class="card-body">
+                        <h2 class="card-title">Match Title: Team A vs Team B</h2>
+                        <h3 class="card-title">Enter Your Predictions</h3>
+                        <form>
+                            <div class="form-group">
+                                <label for="wager">Enter Wager (money)</label>
+                                <input type="text" class="form-control" id="wager">
+                            </div>
+                            <div class="form-group">
+                                <label for="winner">Select Who Will Win</label>
+                                <select class="form-control" id="winner">
+                                    <option>Team A</option>
+                                    <option>Team B</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="manOfTheMatch">Select Man of the Match</label>
+                                <select class="form-control" id="manOfTheMatch">
+                                    <!-- Add options for man of the match -->
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="highestRun">Select Who Will Take Highest Run</label>
+                                <select class="form-control" id="highestRun">
+                                    <!-- Add options for highest run scorer -->
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="highestWicket">Select Who Will Take Highest Wicket</label>
+                                <select class="form-control" id="highestWicket">
+                                    <!-- Add options for highest wicket taker -->
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start mt-5">
+        <div class="text-center p-3">
+            © 2024 BettingSite. All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
