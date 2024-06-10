@@ -15,6 +15,10 @@
         .navbar {
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+        /* Add box-shadow to the profile card */
+        .profile-card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 <body>
@@ -34,10 +38,10 @@
                         <a class="nav-link" href="leaderboard.html">Leaderboard</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="profile.html">Profile <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="profile.html">Profile</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login.html">Logout</a>
+                        <a class="nav-link" href="login.html">Login</a>
                     </li>
                 </ul>
             </div>
@@ -48,17 +52,18 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-6 mx-auto">
-                <div class="card">
+                <!-- Apply the profile-card class to the profile card -->
+                <div class="card profile-card">
                     <div class="card-body">
                         <h5 class="card-title">Profile</h5>
-                        <p class="card-text">Name: John Doe</p>
-                        <p class="card-text">Username: johndoe</p>
-                        <p class="card-text">Balance: $1000</p>
-                        <h6 class="card-subtitle mb-2 text-muted">Bet History:</h6>
+                        <p>Name: John Doe</p>
+                        <p>Username: johndoe</p>
+                        <p>Balance: $100</p>
+                        <h6 class="card-subtitle mb-2 text-muted">Bet History</h6>
                         <ul class="list-group">
-                            <li class="list-group-item">Match 1 - $50 - Team A vs Team B</li>
-                            <li class="list-group-item">Match 2 - $100 - Team C vs Team D</li>
-                            <li class="list-group-item">Match 3 - $200 - Team E vs Team F</li>
+                            <li class="list-group-item">Match 1: Team A vs Team B (Win)</li>
+                            <li class="list-group-item">Match 2: Team C vs Team D (Loss)</li>
+                            <li class="list-group-item">Match 3: Team E vs Team F (Win)</li>
                         </ul>
                     </div>
                 </div>
@@ -67,4 +72,15 @@
     </div>
 
     <!-- Footer -->
-    <footer class="bg-light
+    <footer class="bg-light text-center text-lg-start mt-5">
+        <div class="text-center p-3">
+            © 2024 BettingSite. All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
